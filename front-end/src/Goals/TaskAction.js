@@ -6,13 +6,15 @@ const TaskModal = ({ goal, onClose, action, trigger, setTrigger }) => {
         try {
             const response = await fetch(`${process.env.REACT_APP_BACKEND}/delete/goals/${goal?._id}`, {
                 method: 'DELETE',
-                headers: { 'Content-Type': 'application/json' },
+                headers: { 'Content-Type': 'application/json',
+                            'Authorization': window.localStorage.getItem('token')
+                 },
             });
 
             if (!response.ok) {
                 console.error("Failed to delete the goal");
                 return;
-            }
+            } 
             setTrigger(!trigger);
             onClose();
         } catch (error) {
