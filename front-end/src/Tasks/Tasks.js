@@ -125,7 +125,7 @@ function Tasks() {
   }
 
   const handleEdit = (taskId) => {
-    nav(`/EditTask/${taskId}`) // Navigate to the dynamic edit page with the task ID
+    nav(`/EditTask/${taskId}`)
 }
 
   const toggleFilterVisibility = () => setShowFilters(!showFilters);

@@ -3,7 +3,7 @@
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
+    width: 400px;
     margin: 50px auto;
     text-align: center;
 }
@@ -29,27 +29,17 @@
 }
 
 .task-name {
-    font-size: 16px;
+    font-size: 18px;
     color: gray;
+    font-weight: bold;
 }
 
-.task-done-btn, .task-pending-btn {
-    padding: 8px 12px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 14px;
+.task-status{
+    font-size: 18px;
+    color: gray;
+    font-weight: bold;
 }
 
-.task-done-btn {
-    background-color: green;
-    color: white;
-}
-
-.task-pending-btn {
-    background-color: orange;
-    color: white;
-}
 
 .back-btn {
     display: inline-block;

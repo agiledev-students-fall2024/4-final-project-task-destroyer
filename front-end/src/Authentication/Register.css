@@ -1,4 +1,3 @@
-
 body {
 display: flex;
 justify-content: center;
@@ -17,7 +16,6 @@ width: 400px;
 margin: 50px auto;
 }
 
-/* Heading */
 h1 {
 font-size: 32px;
 font-weight: bold;
@@ -25,7 +23,6 @@ margin-bottom: 20px;
 color: #333;
 }
 
-/* Input Fields */
 input[type="text"],
 input[type="email"],
 input[type="password"] {

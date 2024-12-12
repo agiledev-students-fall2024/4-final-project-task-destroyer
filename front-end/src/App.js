@@ -37,7 +37,6 @@ function App() {
             <Route path="/Login" element={<Login />} />
             <Route path="/Register" element={<Register />} />
             <Route path="/Homepage" element={<Homepage />} />
-            {/* Rena's part : monthly Calendar */}
             <Route path="/Calendar_monthly" element={<Calendar_monthly/>} />
             <Route path=":month/:day/:year" element={<DailyView />} />
             <Route path="*" element={<NotFound />} /> 

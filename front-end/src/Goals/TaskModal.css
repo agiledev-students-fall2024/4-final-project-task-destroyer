@@ -33,6 +33,13 @@
     padding: 10px 20px;
     background-color: #007bff;
     color: white;
-    border: none;
+    border: 3px;
+    border-radius: 5px;
     cursor: pointer;
+}
+
+.modal{
+    font-size: 18px;
+    color: gray;
+    font-weight: bold;
 }

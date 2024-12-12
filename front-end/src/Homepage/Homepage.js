@@ -36,9 +36,6 @@ function Homepage(){
     nav('/Goals')
   }
   const handleSignOut = () => {
-    // IMPORTANT Comment for Sprint3: Up to end of sprint 3, we're not sure whether we need further maintain 
-    // the Authentication part. For now we will leave the designed login/register logic at here, but we don't integrate 
-    // it with other parts. You can Register and login as normal, but it WILL NOT AFFECT ANYTHING!!!
     window.localStorage.removeItem("session_user");
     window.localStorage.removeItem("token");
     nav('/Login');
@@ -49,7 +46,7 @@ function Homepage(){
 
       <div className="urgent-tasks">
         {urgentTasks.map((task) => (
-          <div key={task._id}>
+          <div className="urgent" key={task._id}>
             {task.name}: due by {new Date(task.due).toLocaleDateString()}
           </div>
         ))}
