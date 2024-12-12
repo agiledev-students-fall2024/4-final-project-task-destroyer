@@ -100,7 +100,7 @@ function CreateTask() {
             </div>
             <div>
                 <h3>Due Date</h3>
-                <input className='box' type="date" onChange={handleDue_date}/>
+                <input type="date" onChange={handleDue_date} className='date-input'/>
             </div>
             <div>
                 <h3>Priority</h3>
