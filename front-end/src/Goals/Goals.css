@@ -17,21 +17,14 @@
 }
 
 .new-goal-btn {
-    display: inline-block;
-    padding: 12px 24px;
-    margin-bottom: 30px;
-    color: white;
-    background-color: #a65fa0; /* Refined color for buttons */
-    border-radius: 25px; /* Rounded button */
-    text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.3s ease, transform 0.2s ease; /* Add smooth transition */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Button shadow */
-}
-
-.new-goal-btn:hover {
-    background-color: #8a4e86; /* Darker hover color */
-    transform: translateY(-2px); /* Hover lift effect */
+display: inline-block;
+padding: 10px 20px;
+margin-bottom: 20px;
+color: white;
+background-color: rgb(162, 95, 160);
+border-radius: 5px;
+text-decoration: none;
+font-weight: bold;
 }
 
 .goals-list {

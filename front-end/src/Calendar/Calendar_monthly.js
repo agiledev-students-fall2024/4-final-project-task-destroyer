@@ -110,7 +110,6 @@ const Calendar_monthly = () => {
                                     {/* Conditionally render Tasks */}
                                     <div className='task_calendar'>
                                         {day !== null ? <p>Tasks:</p> : null} 
-                                        {/* Placeholder for task count or actual data */}
                                         {day !== null ?  <p>{taskCounts[day] || 0}</p>: null }
                                     </div>
                                 </div>

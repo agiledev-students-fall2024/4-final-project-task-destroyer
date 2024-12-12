@@ -6,12 +6,11 @@ const TaskModal = ({ goal, onClose }) => {
         <div className="modal-background">
             <div className="modal-content">
                 <h2>{goal.title}</h2>
-                <h4>Tasks:</h4>
+                <h3>Tasks:</h3>
                 <ul>
                     {goal.tasks.map((task, index) => (
-                        <li key={index}>
-                            <p>Task: {task.name}</p>
-                            <p>Due Date: {new Date(task.due).toLocaleDateString()}</p> {/* Format due date */}
+                        <li className="modal" key={index}>
+                            <p>Task:{task.name},  Due Date:{new Date(task.due).toLocaleDateString()}</p> {/* Format due date */}
                         </li>
                     ))}
                 </ul>

@@ -177,9 +177,6 @@ function EditTask({ }) {
                 </div>
             )}   
         <br></br>
-{/* 
-        <button onClick={handleDelete} className="cancel-btn">Delete</button>
-        <button onClick={handleSubmit} className="create-btn">Save</button>   */}
 
         <Link to="/tasks"  onClick={handleDelete} className="cancel-btn">Delete</Link>     
         <Link to="/tasks" className="cancel-btn">Cancel</Link>
