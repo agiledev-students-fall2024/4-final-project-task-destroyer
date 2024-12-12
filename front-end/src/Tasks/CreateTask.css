@@ -64,8 +64,10 @@ color: white;
 border: none;
 border-radius: 5px;
 cursor: pointer;
+text-decoration: none;
 }
 .create-btn{
+text-decoration: none;
 flex: 1;
 padding: 10px 20px;
 background-color: #007BFF;
@@ -80,3 +82,14 @@ margin-left: 30px;
 .create-btn:hover {
 background-color: purple;
 }
+
+.date-input {
+width: 300px;
+height: 50px;
+padding: 10px;
+font-size: 16px;
+border: 2px solid #ccc;
+border-radius: 5px;
+outline: none;
+transition: border-color 0.3s ease;
+  }

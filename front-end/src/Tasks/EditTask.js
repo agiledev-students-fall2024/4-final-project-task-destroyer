@@ -148,7 +148,7 @@ function EditTask({ }) {
                 <input  type="date" 
                         value={due}
             
-                        onChange={handleDueDate}/>
+                        onChange={handleDueDate} className='date-input'/>
             </div>
             <div>
                 <h3>Priority</h3>

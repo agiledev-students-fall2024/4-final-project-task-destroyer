@@ -23,8 +23,13 @@ background-color: rgb(162, 95, 160);
 border-radius: 5px;
 text-decoration: none;
 font-weight: bold;
+transition: all 0.3s ease;
 }
 
+.new-goal-btn:hover{
+    background-color: gray;
+    font-size: small;
+}
 
 .goals-list {
 display: flex;
