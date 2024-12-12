@@ -39,13 +39,6 @@ To set up the project locally, follow these steps:
 3. Navigate to the according directories and install dependencies:
 
    ```bash
-   npm install jsonwebtoken
-   npm install mongo-sanitize
-   npm install mongoose
-   npm install chai
-   npm install mocha
-   npm install axios
-   
    cd back-end
    npm install
    cd front-end
