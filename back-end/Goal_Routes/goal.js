@@ -8,8 +8,8 @@ const sanitize = require('mongo-sanitize');
 const app = new Router();
 
 app.get('/goals/:id', async (req, res) => {
-    const userId = req.params.id;
-    sanitize(userId);
+    let userId = req.params.id;
+    userId = sanitize(userId);
     try {
       const goals = await Goal.find({"user_id": userId}).populate('tasks');
       const enrichedGoals = goals.map(goal => {
@@ -26,8 +26,8 @@ app.get('/goals/:id', async (req, res) => {
   });
 
 app.delete('/delete/goals/:id', async (req, res) => {
-    const goalId = req.params.id;
-    sanitize(goalId)
+    let goalId = req.params.id;
+    goalID = sanitize(goalId)
     try {
         const goal = await Goal.findByIdAndDelete(goalId);
         if (!goal) {

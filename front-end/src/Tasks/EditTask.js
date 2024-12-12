@@ -23,19 +23,18 @@ function EditTask({ }) {
     useEffect(() => {
         const fetchTask = async () => {
             try {
-                const response = await fetch(`${process.env.REACT_APP_BACKEND}/tasks/${taskId}`, {
+                let task = await fetch(`${process.env.REACT_APP_BACKEND}/tasks/${taskId}`, {
                     method: 'GET',
                     headers: {
                         'Content-Type': 'application/json',
                         'Authorization': window.localStorage.getItem('token')
                     }
-                });
-                if (response.status === 401 || response.error === "Invalid token" || response.error === "No token provided") { 
+                })
+                if (task["status"] === 401 || task.error === "Invalid token" || task.error === "No token provided") { 
                     navigate('/')
                     return 
                 }
-                const task = response.data
-
+                task = await task.json()
                 setName(task.name || '')
                 setDescription(task.description || '')
                 setSubject(task.subject || '')
@@ -43,7 +42,7 @@ function EditTask({ }) {
                 setPriority(task.priority || 'Low')
                 setRecurring(task.recurring || 'No')
                 setRecurring_period(task.recurring_period || '')
-                setStatus(task.status || 'not_started')
+                setStatus(task["status"] || 'not_started')
                 setGoal(task.goal || '')
             } catch (error) {
                 console.error('Error fetching task:', error)
