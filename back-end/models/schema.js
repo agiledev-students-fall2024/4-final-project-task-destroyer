@@ -36,3 +36,10 @@ const Goal = mongoose.model('Goal', GoalSchema);
 const Task = mongoose.model("Task", TaskSchema)
 const User = mongoose.model("User", UserSchema)
 
+
+module.exports = {
+  User: mongoose.model("User", UserSchema),
+  Task: mongoose.model("Task", TaskSchema),
+  Goal: mongoose.model("Goal", GoalSchema),
+};
+
