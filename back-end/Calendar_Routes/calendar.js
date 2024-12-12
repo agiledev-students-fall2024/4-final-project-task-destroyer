@@ -7,10 +7,10 @@ const sanitize = require('mongo-sanitize');
 
 
 router.get('/calendar/month/:year/:month/tasks/:user_id', async (req, res) => {
-  const { year, month, user_id } = req.params;
-  sanitize(year);
-  sanitize(month);
-  sanitize(user_id);
+  let { year, month, user_id } = req.params;
+  year = sanitize(year);
+  month = sanitize(month);
+  user_id = sanitize(user_id);
   const startOfMonth = new Date(Date.UTC(year, month - 1, 1));
   const endOfMonth = new Date(Date.UTC(year, month, 0, 23, 59, 59));
 
@@ -40,11 +40,11 @@ router.get('/calendar/month/:year/:month/tasks/:user_id', async (req, res) => {
 
 // Route to get tasks for a specific day, filtered by user_id
 router.get('/calendar/:month/:day/:year/:user_id', async (req, res) => {
-  const { month, day, year, user_id } = req.params;
-  sanitize(month);
-  sanitize(day);
-  sanitize(year);
-  sanitize(user_id);
+  let { month, day, year, user_id } = req.params;
+  month = sanitize(month);
+  day = sanitize(day);
+  year = sanitize(year);
+  user_id = sanitize(user_id);
   try {
     const startOfDay = new Date(Date.UTC(year, month - 1, day, 0, 0, 0)); // Midnight UTC
     const endOfDay = new Date(Date.UTC(year, month - 1, day, 23, 59, 59)); // 23:59:59 UTC

@@ -1,110 +1,144 @@
 .new-goal-container {
-background-color: white;
-padding: 20px;
-border-radius: 10px;
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-width: 400px;
-margin: 50px auto;
-text-align: center;
+    background-color: #f9f9f9; /* Light grey for better contrast */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+    width: 500px; /* Wider for better spacing */
+    margin: 50px auto;
+    text-align: center;
+    font-family: 'Arial', sans-serif; /* Modern font */
 }
 
 .page-title {
-font-size: 32px;
-color: black;
-margin-bottom: 20px;
+    font-size: 36px; /* Larger title */
+    color: #333; /* Darker grey for contrast */
+    margin-bottom: 30px;
+    font-weight: bold;
 }
 
 .form-group {
-margin-bottom: 15px;
-text-align: left;
+    margin-bottom: 20px;
+    text-align: left;
 }
 
 .form-group label {
-display: block;
-font-size: 16px;
-margin-bottom: 5px;
-color: #333;
+    display: block;
+    font-size: 18px; /* Larger label font */
+    margin-bottom: 8px;
+    color: #555; /* Softer grey */
+    font-weight: bold;
 }
 
 .form-group input, 
 .form-group select {
-width: 100%;
-padding: 10px;
-border: 1px solid rgb(204, 202, 202);
-border-radius: 5px;
-box-sizing: border-box;
-font-size: 16px;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #6200ea; /* Focus color */
+    outline: none;
 }
 
 .tasks-section {
-text-align: left;
-margin-top: 15px;
+    text-align: left;
+    margin-top: 20px;
 }
 
 .task-input-group {
-margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .new-goal-buttons {
-display: flex;
-justify-content: space-between;
-margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
 }
 
 
 .cancel-btn {
-flex: 1;
-padding: 10px 20px;
-background-color: #007BFF;
-color: white;
-border: none;
-border-radius: 5px;
-cursor: pointer;
-transition: background-color 0.3s ease;
-margin-right: 10px;
+    flex: 1;
+    padding: 12px 20px;
+    background-color: #007bff; /* Blue for cancel */
+    color: white;
+    border: none;
+    border-radius: 25px; /* Rounded button */
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow effect */
 }
 
 .create-btn {
-flex: 1;
-padding: 10px 20px;
-background-color: #007BFF;
-color: white;
-border: none;
-border-radius: 5px;
-cursor: pointer;
-transition: background-color 0.3s ease;
+    flex: 1;
+    padding: 12px 20px;
+    background-color: #6200ea; /* Purple for create */
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .cancel-btn:hover,
 .create-btn:hover {
-background-color: purple;
+    background-color: #4e00c0; /* Darker purple hover effect */
+    transform: translateY(-2px); /* Slight lift */
 }
+
 .task-select-btn {
-background-color: #6200ea;
-color: white;
-border: none;
-padding: 8px 16px;
-cursor: pointer;
-margin-top: 10px;
-border-radius: 5px;
+    background-color: #6200ea;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    cursor: pointer;
+    margin-top: 15px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.task-select-btn:hover {
+    background-color: #4e00c0;
+    transform: translateY(-2px);
 }
 
 .task-list-dropdown {
-border: 1px solid #ddd;
-background-color: white;
-padding: 10px;
-margin-top: 8px;
-max-height: 200px;
-overflow-y: auto;
-border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: white;
+    padding: 15px;
+    margin-top: 10px;
+    max-height: 250px; /* Increased height */
+    overflow-y: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for dropdown */
 }
 
 .task-item {
-display: flex;
-align-items: center;
-margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
 }
 
 .task-item input[type="checkbox"] {
-margin-right: 8px;
+    margin-right: 10px;
 }
+
+.task-item span {
+    font-size: 16px;
+    color: #555; 
+}
+

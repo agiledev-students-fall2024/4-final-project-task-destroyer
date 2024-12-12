@@ -8,38 +8,59 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 50px auto;
+    z-index: 1000; /* Ensure it appears above other elements */
 }
 
 .modal-content {
-    background:white;
-    padding: 20px;
-    border-radius: 5px;
-    width: 80%;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 90%;
     max-width: 500px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
 }
 
-.modal-content h2, .modal-content h4 {
-    margin: 0;
+.modal-content h2 {
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: rgb(162, 95, 160); /* Match the button color in Goals.css */
+}
+
+.modal-content h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: black;
 }
 
 .modal-content ul {
     list-style: none;
     padding: 0;
+    margin: 15px 0;
+    text-align: left;
+}
+
+.modal-content ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
 }
 
 .modal-content button {
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: #007bff;
+    background-color: #6200ea; /* A vibrant purple matching other elements */
     color: white;
-    border: 3px;
-    border-radius: 5px;
+    border: none;
     cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
 }
 
-.modal{
-    font-size: 18px;
-    color: gray;
-    font-weight: bold;
+.modal-content button:hover {
+    background-color: #4500b8; /* Slightly darker hover effect */
+}
+
+.modal-content button + button {
+    margin-left: 10px; 
 }
