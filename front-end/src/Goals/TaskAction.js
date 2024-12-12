@@ -14,7 +14,7 @@ const TaskModal = ({ goal, onClose, action, trigger, setTrigger }) => {
             if (!response.ok) {
                 console.error("Failed to delete the goal");
                 return;
-            }
+            } 
             setTrigger(!trigger);
             onClose();
         } catch (error) {
