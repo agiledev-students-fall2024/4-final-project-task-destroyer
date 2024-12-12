@@ -34,19 +34,25 @@ To set up the project locally, follow these steps:
    git clone https://github.com/agiledev-students-fall2024/4-final-project-task-destroyer.git
    ```
 
-2. Navigate to the according directories and install dependencies:
+2. Navigate to the project directory
+
+3. Navigate to the according directories and install dependencies:
 
    ```bash
    npm install jsonwebtoken
    npm install mongo-sanitize
-   mongoose
+   npm install mongoose
+   npm install chai
+   npm install mocha
+   npm install axios
+   
    cd back-end
    npm install
    cd front-end
    npm install
    ```
 
-3. Create a file named ".env" in the back-end folder and add the following content to the file:
+4. Create a file named ".env" in the back-end folder and add the following content to the file:
 
 ```
 PORT=4000
@@ -69,12 +75,15 @@ REACT_APP_BACKEND="http://localhost:4000/"
    cd back-end
    npm start
    ```
+   The back-end server should be running on http://localhost:4000
 
 2.  Navigate to the front-end folder and start the frontend application:
+   
    ```bash
    cd front-end
    npm start
    ```
+   The front-end should be accessible on http://localhost:3000
 
 ### Testing
 
