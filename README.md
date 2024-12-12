@@ -39,6 +39,7 @@ To set up the project locally, follow these steps:
    ```bash
    npm install jsonwebtoken
    npm install mongo-sanitize
+   mongoose
    cd back-end
    npm install
    cd front-end
@@ -62,14 +63,14 @@ REACT_APP_BACKEND="http://localhost:4000/"
 
 ### Run the Application
 
-1. Start the backend server:
+1. Navigate to the back-end folder and start the backend server:
 
    ```bash
    cd back-end
    npm start
    ```
 
-2. Start the frontend application:
+2.  Navigate to the front-end folder and start the frontend application:
    ```bash
    cd front-end
    npm start
