@@ -95,3 +95,7 @@ REACT_APP_BACKEND="http://localhost:4000/"
    ```bash
    npm run test
    ```
+
+### Deployment
+
+Here is the link for Deployment URL: http://104.131.42.7/
